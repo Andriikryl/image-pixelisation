@@ -20,7 +20,7 @@ export default function Index({src, src10}) {
             image.onload = () => {
                 setTimeout( () => {
                     animate(image);
-                }, 350)
+                }, 150)
             }
             image.src = src
         }

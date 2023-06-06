@@ -1,6 +1,8 @@
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
+.main{
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
 }

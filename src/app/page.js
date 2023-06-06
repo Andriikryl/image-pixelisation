@@ -1,18 +1,14 @@
-import styles from "./page.module.css";
-import ImagePixelisation from "../components/ImagePixelisation";
+import styles from './page.module.css'
+import PixelatedImage from '../components/PixelatedImage';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      {[...Array(7).keys()].map((_, index) => {
-        return (
-          <ImagePixelisation
-            key={index}
-            src={`/images/${index}.png`}
-            src10={`/images/${index}_small.png`}
-          />
-        );
-      })}
-    </main>
-  );
+    <div className={styles.main}>
+      {
+        [...Array(7).keys()].map( (_, index) => {
+          return <PixelatedImage src={`/images/${index}.png`} src10={`/images/${index}_small.png`}/>
+        })
+      }
+    </div>
+  )
 }
